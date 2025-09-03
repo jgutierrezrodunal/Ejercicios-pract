@@ -24,4 +24,16 @@ for i in range (1,31):
     print (i,"² = ", i ** 2)
     i + 1
 
+#Ejercicio 16
+
+print("-- Ejercicio #16 --")
+
+n = 1
+
+for i in range(1,21):
+    n *= i
+
+print("Números del 1 al 20 multiplicados: ", n)
+
+
 
