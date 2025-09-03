@@ -48,4 +48,31 @@ if(num21A < num21B):
 else:
     print("El número ", num21B , " es el numero menor \nEl número ", num21A , " es el numero mayor")
 
+#Ejercicio 26
+
+print("-- Ejercicio #21 -- \n Número menor y mayor de tres números")
+
+num21A = float(input("Ingrese el primer numero: "))
+num21B = float(input("Ingrese el segundo numero: "))
+num21C = float(input("Ingrese el tercer numero: "))
+
+if(num21A < num21B and num21A < num21C):
+    print("El número ", num21A , " es el numero menor") 
+
+if(num21B < num21A and num21B < num21C):
+    print("El número ", num21B , " es el numero menor")
+
+if(num21C < num21A and num21C < num21B):
+    print("El número ", num21C , " es el numero menor") 
+
+if(num21A > num21B and num21A > num21C):
+    print("El número ", num21A , " es el numero mayor") 
+
+if(num21B > num21A and num21B > num21C):
+    print("El número ", num21B , " es el numero mayor")
+
+if(num21C > num21A and num21C > num21B):
+    print("El número ", num21C , " es el numero mayor") 
+
+
 
