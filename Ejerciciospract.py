@@ -94,4 +94,40 @@ while working == 1:
             print(tfar,"grados farenheit equivalen a ", tcel, "grados celsius")
             tfar = float(input("Ingrese la temperatura en escala Farenheit: "))
         
+#Ejercicio 28
+
+print("-- Ejercicio #28 -- \n Bienvenido al sistema de información de piso, aquí podrá seleccionar cada nivel del edificio y conocer a qué está enfocado el piso solicitado. ")
+
+cantp = int(input("Ingrese la cantidad de pisos de los que requiere información: "))
+
+for i in range (0,cantp):
+    
+    npiso = int(input("Ingrese el número del piso (de los 6 que hay) del que requiere información: "))
+    
+    match npiso:
         
+        case -1:
+            print(" Sótano del edificio \n ¡ADVERTENCIA! * SOLO PERSONAL AUTORIZADO * \n Aquí se encuentran los servidores de la empresa y los generadores eléctricos que alimentan el edificio")
+       
+        case 0:
+            print("*** ERROR ***  INFORMACIÓN DEL PISO 0 CLASIFICADA, ABANDONE EL EDIFICIO INMEDIATAMENTE")
+           
+        case 1:
+            print(" Primer piso \n Zona de recepción y lobby de espera, cuenta con 2 baños y una cafetería")
+            
+        case 2:
+            print(" Segundo piso \n Área de oficinas, aquí se encuentran los cúbiculos para empleados y el archivo dónde se almacenan los documentos, cuenta con 2 baños")
+            
+        case 3: 
+            print(" Tercer piso \n Zona recreativa, espacios de descanso, comedor, área de ejercicio, cuenta con 2 baños y balcón ")
+            
+        case 4:
+            print(" Cuarto piso \n Oficinas administrativas, despachos del personal administrativo incluyendo la oficina del jefe de sede, cuenta con 2 baños, cafetería y balcón")
+            
+        case 5:
+            print(" Terraza \n Nadie suele venir aquí... hay unas sillas, creo...")
+            
+        case _:
+            print("Piso inexistente")
+
+print("Esperamos la información le haya sido de utilidad, Bienvenido a Arasaka Corporation.")    
