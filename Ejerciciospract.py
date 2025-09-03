@@ -75,4 +75,23 @@ if(num21C > num21A and num21C > num21B):
     print("El número ", num21C , " es el numero mayor") 
 
 
+#Ejercicio 27
 
+print("-- Ejercicio #27 -- \n Temperatura Farenheit a Celsius \n (Ingrese 999 como valor de temperatura para finalizar el programa)")
+tfar = 0
+tcel = 0
+tfar = float(input("Ingrese únicamente el número de la temperatura en escala Farenheit: "))
+working = 1
+
+while working == 1:
+    match tfar:
+        case 999:
+            print("Finalizando ejercicio...")
+            working = 0
+
+        case _:
+            tcel = (5 / 9) * (tfar - 32)
+            print(tfar,"grados farenheit equivalen a ", tcel, "grados celsius")
+            tfar = float(input("Ingrese la temperatura en escala Farenheit: "))
+        
+        
